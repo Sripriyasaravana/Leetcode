@@ -211,30 +211,27 @@ class MyLinkedList {
              tail=null;
          }
          }
-         else
-         {
-             Node temp=head;
-             for(int i=0;i<index-1;i++)
-             {
-                 temp=temp.next;
-             }
-             if(temp.next==tail)
-             {
-                 tail=temp;
-             }
-              
-             else {
+          else {
+        Node temp = head ;
+        for ( int i = 0 ; i < index - 1 ; i ++ ) {
+            temp = temp . next ;
+        }
+        if ( temp . next == tail ) {
+            tail = temp ;
+        } else {
             if(temp.next != null && temp.next.next != null){
-                temp.next.prev = temp;
+                temp.next.next.prev = temp;
             }
 
         }
-        temp.next = temp.next.next ;
+        temp . next = temp . next . next ;
     }
     size -- ;
+    // if(size == 0){
+    //     head = null;
+    //     tail = null;
     }
 }
-
 /**
  * Your MyLinkedList object will be instantiated and called as such:
  * MyLinkedList obj = new MyLinkedList();
