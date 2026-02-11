@@ -225,16 +225,13 @@ class MyLinkedList {
               
              else {
             if(temp.next != null && temp.next.next != null){
-                temp.next.next.prev = temp;
+                temp.next.prev = temp;
             }
 
         }
         temp.next = temp.next.next ;
     }
     size -- ;
-    // if(size == 0){
-    //     head = null;
-    //     tail = null;
     }
 }
 
