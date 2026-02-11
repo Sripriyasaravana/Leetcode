@@ -82,8 +82,8 @@ class Solution {
             temp=next;
 
         }
-        slow.next=null;
-        ListNode temp1=head;
+        slow.next=null;//ithula first half condition use pannro
+        ListNode temp1=head;//second half condition use pannalam to slow equal to null
         ListNode temp2=prev;
         while(temp2!=null)
         {
