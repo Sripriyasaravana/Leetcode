@@ -15,6 +15,8 @@ class MinStack {
     public MinStack() {
         // stack=new Stack<>();
         // minstack=new Stack<>();
+        head=null;
+        head1=null;
     }
     
     public void push(int val) {
