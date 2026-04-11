@@ -9,7 +9,7 @@ class Solution {
               if(count==3) return true;
             }
             else{
-                count = 0;
+                count=0;
             }
             
         }
