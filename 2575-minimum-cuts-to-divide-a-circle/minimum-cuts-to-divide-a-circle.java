@@ -4,7 +4,7 @@ class Solution {
         {
             return 0;
         }
-        if(n%2==0)
+        if((n&1)==0)
         {
             return n/2;
         }
