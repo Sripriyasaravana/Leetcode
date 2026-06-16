@@ -18,7 +18,7 @@ class Solution {
        {
         if(nums1[i]==nums2[j])
         {
-            return nums1[i];
+            return nums2[j];
         }
         if(nums1[i]<nums2[j])
         {
