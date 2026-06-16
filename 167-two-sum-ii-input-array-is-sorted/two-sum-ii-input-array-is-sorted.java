@@ -1,33 +1,35 @@
 class Solution {
     public int[] twoSum(int[] numbers, int target) {
-         //int i=0;
-         //int j=numbers.length-1;
-        // while(i<j)
-        // {
-        //     int sum=numbers[i]+numbers[j];
-        //     if(sum==target)
-        //     {
-        //         return new int[]{i+1,j+1};
-        //     }
-        //     else if(sum<target)
-        //     {
-        //         i++;
-        //     } else
-        //     {
-        //     j--;
-        // }
-        // }
-        //  return new int[]{i-1,j-1};
-        for(int i=0;i<numbers.length;i++)
+         int i=0;
+         int j=numbers.length-1;
+        while(i<j)
         {
-            for(int j=i+1;j<numbers.length;j++)
+            int sum=numbers[i]+numbers[j];
+            if(sum==target)
             {
-                if(numbers[i]+numbers[j]==target)
-                {
-                    return new int[] {i+1,j+1};
-                }
+                return new int[]{i+1,j+1};
             }
+            else if(sum<target)
+            {
+                i++;
+            } else
+            {
+            j--;
         }
-        return new int[] {};
+        }
+         return new int[]{i-1,j-1};
     }
 }
+//         for(int i=0;i<numbers.length;i++)
+//         {
+//             for(int j=i+1;j<numbers.length;j++)
+//             {
+//                 if(numbers[i]+numbers[j]==target)
+//                 {
+//                     return new int[] {i+1,j+1};
+//                 }
+//             }
+//         }
+//         return new int[] {};
+//     }
+// }
