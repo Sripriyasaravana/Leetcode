@@ -7,7 +7,7 @@ class Solution {
         }
         for(int i=1;i<n;i++)
         {
-            if(n%i==1||n%1!=1)
+            if(n%2==1||n%4!=1)
             {
                 count++;
             }
