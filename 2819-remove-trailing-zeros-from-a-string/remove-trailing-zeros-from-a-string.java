@@ -28,9 +28,9 @@
         while (i >= 0 && num.charAt(i) == '0') {
             i--;
         }
-        if (i == -1) {
-            return "0";
-        }
+        // if (i == -1) {
+        //     return "0";
+        // }
         String output = "";
         for (int j = 0; j <= i; j++) {
             output += num.charAt(j);
