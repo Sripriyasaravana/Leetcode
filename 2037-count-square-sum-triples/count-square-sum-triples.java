@@ -1,18 +1,37 @@
 class Solution {
     public int countTriples(int n) {
-        int count=0;
-        for(int a=1;a<=n;a++)
+//         int count=0;
+//         for(int a=1;a<=n;a++)
+//         {
+//             for(int b=1;b<=n;b++)
+//             {
+//                     int sum=a*a+b*b;
+//                     int c=(int)Math.sqrt(sum);
+//                 if(c*c==sum&&c<=n)
+//                 {
+//                     count++;
+//                 }
+//             }
+//         }
+//         return count;
+//         }    
+// }
+int count=0;
+for(int a=1;a<=n;a++)
         {
             for(int b=1;b<=n;b++)
             {
-                    int sum=a*a+b*b;
-                    int c=(int)Math.sqrt(sum);
-                if(c*c==sum&&c<=n)
+                for(int c=1;c<=n;c++)
                 {
-                    count++;
+                    if(a*a+b*b==c*c)
+                    {
+                        count++;
+                    }
                 }
             }
+
         }
         return count;
-        }    
+    }
 }
+
